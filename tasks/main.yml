@@ -1,0 +1,10 @@
+---
+# tasks file for wireshark
+
+- name: Set dir_info,pkg_info fact in {{ ansible_distribution }} by {{ wireshark_install_type }} install
+  set_fact:
+    dir_info: "{{ wireshark_dirs[ansible_os_family] }}"
+    pkg_info: "{{ wireshark_packages[wireshark_version][ansible_os_family] }}"
+
+- name: Include Windows-{{ wireshark_install_type }}.yml in {{ ansible_distribution }} by {{ wireshark_install_type }} install
+  include: Window-{{ wireshark_install_type }}.yml

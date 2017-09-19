@@ -1,0 +1,12 @@
+---
+# vars file for wireshark
+
+wireshark_dirs:
+  Windows:
+    tmp: C:\tmp
+
+wireshark_packages:
+  2.4.1:
+    Windows:
+      file: wireshark.install.2.4.1.nupkg
+      pull: ftp://10.0.250.100/pub/wireshark/window/wireshark.install.2.4.1.nupkg

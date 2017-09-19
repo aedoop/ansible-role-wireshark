@@ -1,0 +1,7 @@
+---
+# defaults file for wireshark
+
+package_name: wireshark
+
+wireshark_version: 2.4.1
+wireshark_install_type: pull
